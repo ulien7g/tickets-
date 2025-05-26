@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Бронювання квитків</title>
 </head>
 <body>#about-event, #tickets, #contact
@@ -23,7 +24,7 @@
         <p><strong>Місце:</strong> Концертна зала "Україна", м. Київ</p>
         <h2>Квитки</h2> 
         <p>Виберіть тип квитка та заповніть форму бронювання: </p> 
-        <form action="/submit-ticket" method="post"> 
+       <form action="/submit-ticket" method="post"> 
         <select id="ticket-type" name="ticket-type" required> 
         <option value="standard" > Стандартний 500 грн</option> 
         <option value="vip">VIP 1000 грн</option> 
@@ -32,7 +33,13 @@
         <input type="email" id="email" name="email" placeholder="example@mail.com" required> 
         <input type="tel" id="phone" name="phone" placeholder="+380123456789" required> 
         <button type="submit">3абронювати</button> 
-        </form>
+       </form>
+        <h2>Контакти</h2> 
+        <p>Зв'яжіться з нами, якщо маєте запитання: </p> 
+        <address> 
+        <p>Email: <a href="mailto:info@tickets.ua">info@tickets.ua</a></p> 
+        <p>Телефон: <a href="tel:+380987654321">+380 98 765 4321</a></p> 
+        </address>
     </main>
     
 </body>
